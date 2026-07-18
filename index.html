@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Pack +25 Modelos de Caixinhas Personalizadas de Times — Dia dos Pais</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/tl40neoi11.js" async type="module"></script>
+
+<style>
+:root{
+  --bg:#F8F6F1;
+  --title:#111827;
+  --accent:#16A34A;
+  --accent-dark:#0f7d38;
+  --gold:#F59E0B;
+  --text:#374151;
+  --card-border:#E5E7EB;
+  --btn-gray:#6B7280;
+  --white:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  max-width:480px;
+  margin:0 auto;
+  overflow-x:hidden;
+}
+h1,h2,h3,.display{font-family:'Poppins',sans-serif;}
+
+/* TOPBAR */
+.topbar{
+  background:var(--title);
+  color:#fff;
+  text-align:center;
+  padding:10px 16px;
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:.3px;
+  display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;
+}
+.topbar svg{flex-shrink:0;stroke:#4ADE80;}
+.topbar span{color:#4ADE80;font-weight:800;}
+.topbar .tb-pulse{animation:tbPulse 1.6s ease-in-out infinite;}
+@keyframes tbPulse{
+  0%,100%{opacity:1;text-shadow:0 0 0 rgba(74,222,128,0);}
+  50%{opacity:.75;text-shadow:0 0 10px rgba(74,222,128,.65);}
+}
+.topbar .tb-timer{color:#fff;font-weight:800;}
+.topbar .tb-timer span{color:#F59E0B;font-weight:900;}
+
+/* HERO */
+.hero{
+  background:var(--bg);
+  text-align:center;
+  padding:36px 20px 30px;
+}
+.eyebrow{
+  display:inline-block;
+  background:#DCFCE7;
+  color:var(--accent-dark);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.5px;
+  padding:7px 16px;
+  border-radius:50px;
+  margin-bottom:16px;
+}
+.hero h1{
+  font-size:29px;
+  font-weight:900;
+  line-height:1.28;
+  color:var(--title);
+  margin-bottom:14px;
+}
+.hero h1 .num{color:var(--accent);}
+.hero h1 .h1-highlight{
+  color:var(--accent);
+  font-size:1.18em;
+  display:inline-block;
+  animation:h1Pulse 1.6s ease-in-out infinite;
+}
+@keyframes h1Pulse{
+  0%,100%{opacity:1;text-shadow:0 0 0 rgba(22,163,74,0);}
+  50%{opacity:.78;text-shadow:0 0 14px rgba(22,163,74,.45);}
+}
+.hero p{
+  font-size:16px;
+  line-height:1.65;
+  color:var(--text);
+  margin-bottom:22px;
+}
+.hero-video{
+  width:100%;
+  max-width:280px;
+  margin:0 auto 18px;
+  border-radius:22px;
+  overflow:hidden;
+  border:3px solid #fff;
+  box-shadow:0 16px 36px rgba(17,24,39,.16), 0 0 0 1.5px #E5E7EB;
+  background:#0B141A;
+}
+.hero-video wistia-player{width:100%;display:block;}
+.hero-video wistia-player:not(:defined){
+  background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/tl40neoi11/swatch');
+  display:block;filter:blur(5px);padding-top:177.78%;
+}
+.tag-row{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:8px;
+  margin-bottom:22px;
+}
+.tag-chip{
+  font-size:12px;font-weight:700;color:var(--title);
+  background:#fff;border:1px solid var(--card-border);
+  border-radius:50px;padding:7px 14px;
+  display:flex;align-items:center;gap:6px;
+}
+.tag-chip svg{flex-shrink:0;stroke:var(--accent);}
+.wa-note{
+  display:flex;align-items:flex-start;gap:8px;
+  max-width:340px;margin:14px auto 0;text-align:left;
+}
+.wa-note svg{flex-shrink:0;margin-top:2px;stroke:var(--accent);}
+.wa-note p{font-size:12.5px;color:var(--text);line-height:1.55;margin:0;}
+.wa-note strong{color:var(--title);}
+
+/* BUTTONS */
+.btn{
+  display:block;width:100%;
+  font-family:'Poppins',sans-serif;
+  font-size:17px;font-weight:800;
+  padding:18px 20px;border-radius:14px;
+  text-decoration:none;border:none;cursor:pointer;
+  text-align:center;letter-spacing:.2px;
+  transition:transform .15s, box-shadow .15s;
+}
+.btn:active{transform:scale(.98);}
+.btn-green{
+  background:var(--accent);color:#fff;
+  box-shadow:0 8px 20px rgba(22,163,74,.28);
+}
+.btn-green:hover{box-shadow:0 10px 26px rgba(22,163,74,.36);}
+.btn-gray{
+  background:var(--btn-gray);color:#fff;
+  box-shadow:0 6px 14px rgba(107,114,128,.2);
+}
+.btn-pulse{animation:btnPulse 1.7s ease-in-out infinite;}
+@keyframes btnPulse{
+  0%,100%{box-shadow:0 8px 20px rgba(22,163,74,.32);transform:scale(1);}
+  50%{box-shadow:0 12px 32px rgba(22,163,74,.58),0 0 22px rgba(74,222,128,.4);transform:scale(1.025);}
+}
+
+/* SECTIONS */
+.sec{padding:46px 20px;background:var(--white);}
+.sec.alt{background:var(--bg);}
+.sec-title{
+  font-size:24px;font-weight:900;
+  text-align:center;margin-bottom:26px;color:var(--title);line-height:1.25;
+}
+.sec-title .accent{color:var(--accent);}
+
+/* IDEAL PARA */
+.ideal-list{list-style:none;max-width:360px;margin:0 auto;}
+.ideal-list li{
+  display:flex;align-items:flex-start;gap:12px;
+  font-size:15.5px;font-weight:600;color:var(--title);
+  padding:13px 0;border-bottom:1px solid var(--card-border);
+}
+.ideal-list li:last-child{border-bottom:none;}
+.check{
+  flex-shrink:0;width:24px;height:24px;border-radius:50%;
+  background:#DCFCE7;
+  display:flex;align-items:center;justify-content:center;
+}
+.check svg{stroke:var(--accent);}
+
+/* CARROSSEL */
+.car-wrap{overflow:hidden;width:100%;margin:0 0 6px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%);}
+.car-track{display:flex;gap:12px;width:max-content;}
+.model-card{
+  width:150px;height:190px;border-radius:16px;flex-shrink:0;
+  overflow:hidden;
+  border:1.5px solid var(--card-border);
+  background:#fff;
+  box-shadow:0 6px 16px rgba(17,24,39,.08);
+}
+.model-card img{width:100%;height:100%;object-fit:cover;display:block;}
+.car-caption{
+  text-align:center;font-size:13.5px;color:var(--text);
+  margin-top:16px;line-height:1.6;padding:0 8px;
+}
+
+/* PRICING CARDS */
+.pricing-wrap{display:flex;flex-direction:column;gap:16px;}
+.price-card{
+  background:var(--white);
+  border-radius:18px;
+  padding:22px 20px;
+  border:1.5px solid var(--card-border);
+  position:relative;
+}
+.price-card.basic{opacity:.92;border-color:var(--accent);}
+.price-card.premium{
+  background:linear-gradient(165deg,#0F2A4A 0%,#173C66 55%,#1E4A80 100%);
+  border:2.5px solid var(--accent);
+  padding:26px 22px 24px;
+  box-shadow:0 14px 34px rgba(15,42,74,.35);
+}
+.badge-vendido{
+  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:var(--accent);color:#fff;
+  font-size:12px;font-weight:900;letter-spacing:.4px;
+  padding:6px 18px;border-radius:50px;white-space:nowrap;
+  display:flex;align-items:center;gap:6px;
+}
+.badge-vendido svg{flex-shrink:0;fill:#fff;stroke:#fff;}
+.pc-name{font-size:17px;font-weight:800;color:var(--title);margin-bottom:4px;}
+.price-card.premium .pc-name{font-size:19px;margin-top:6px;color:#fff;}
+.pc-desc{font-size:13.5px;color:var(--text);margin-bottom:14px;line-height:1.5;}
+.price-card.premium .pc-desc{color:#C3D3E8;}
+.pc-list{list-style:none;margin-bottom:16px;}
+.pc-list li{
+  font-size:14px;font-weight:600;color:var(--title);
+  padding:7px 0;display:flex;gap:9px;align-items:flex-start;
+}
+.price-card.premium .pc-list li{color:#fff;}
+.pc-list li svg{flex-shrink:0;margin-top:2px;stroke:var(--accent);}
+.price-card.basic .pc-list li svg{stroke:var(--btn-gray);}
+.pc-bonus-block{
+  background:#F0FDF4;border-radius:12px;padding:12px 14px;margin-bottom:12px;
+}
+.price-card.premium .pc-bonus-block{background:rgba(255,255,255,.09);}
+.pc-bonus-block .pb-title{font-size:12.5px;font-weight:800;color:var(--accent-dark);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.price-card.premium .pc-bonus-block .pb-title{color:#4ADE80;}
+.pc-bonus-block .pb-title svg{flex-shrink:0;stroke:var(--accent-dark);}
+.price-card.premium .pc-bonus-block .pb-title svg{stroke:#4ADE80;}
+.pc-bonus-block ul{list-style:none;}
+.pc-bonus-block li{font-size:13.5px;font-weight:600;color:var(--title);padding:4px 0;display:flex;gap:8px;align-items:flex-start;}
+.price-card.premium .pc-bonus-block li{color:#E5EDF7;}
+.pc-bonus-block li svg{flex-shrink:0;margin-top:2px;stroke:var(--accent);}
+.price-card.premium .pc-bonus-block li svg{stroke:#4ADE80;}
+.pc-note{font-size:13px;color:#9CA3AF;margin-bottom:16px;}
+.pc-highlight-note{
+  font-size:13px;font-weight:700;color:#92400E;background:#FEF3C7;
+  border-radius:10px;padding:10px 12px;margin-bottom:16px;text-align:center;
+}
+.price-card.premium .pc-highlight-note{background:rgba(245,158,11,.18);color:#FDE68A;}
+.price-row{margin-bottom:14px;}
+.price-old{font-size:14px;color:#9CA3AF;text-decoration:line-through;margin-bottom:2px;}
+.price-card.premium .price-old{color:#8FA5C0;}
+.price-now-label{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.price-card.premium .price-now-label{color:#C3D3E8;}
+.price-now{font-family:'Poppins',sans-serif;font-size:38px;font-weight:900;color:var(--gold);line-height:1;}
+.price-card.premium .price-now{font-size:44px;}
+.price-now sup{font-size:18px;}
+.price-now .cents{font-size:22px;}
+.pc-pay-note{font-size:12.5px;color:var(--text);margin-bottom:16px;}
+.price-card.premium .pc-pay-note{color:#C3D3E8;}
+
+/* TRANSFORMACAO */
+.transform-box{
+  background:var(--bg);border-radius:20px;padding:30px 22px;text-align:center;
+}
+.transform-box h2{font-size:21px;font-weight:800;color:var(--title);margin-bottom:14px;line-height:1.35;}
+.transform-box p{font-size:15px;color:var(--text);line-height:1.7;}
+.transform-box .accent{color:var(--accent);font-weight:800;}
+
+/* WHATSAPP ENTREGA */
+.wa-box{
+  background:#0B141A;border-radius:20px;padding:18px 16px 20px;
+  box-shadow:0 10px 26px rgba(11,20,26,.22);
+}
+.wa-top{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:0 4px;}
+.wa-icon{
+  width:42px;height:42px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.wa-icon svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.8;}
+.wa-name{font-size:14.5px;font-weight:800;color:#fff;}
+.wa-status{font-size:12px;color:#8BA5AD;display:flex;align-items:center;gap:5px;}
+.wa-status .dot{width:6px;height:6px;border-radius:50%;background:#25D366;display:inline-block;}
+.wa-chat{display:flex;flex-direction:column;gap:8px;}
+.wa-bubble{
+  background:#005C4B;color:#fff;
+  border-radius:14px 14px 14px 3px;
+  padding:11px 14px;font-size:13.5px;font-weight:600;line-height:1.5;
+  display:flex;align-items:center;gap:9px;
+  max-width:88%;
+}
+.wa-bubble svg{flex-shrink:0;stroke:#4ADE80;}
+.wa-bubble .wa-tick{margin-left:auto;flex-shrink:0;}
+.wa-bubble .wa-tick svg{width:14px;height:14px;stroke:#4ADE80;}
+
+/* COMO FUNCIONA */
+.step{
+  display:flex;gap:16px;align-items:flex-start;
+  background:var(--white);border:1.5px solid var(--card-border);
+  border-radius:16px;padding:20px;margin-bottom:14px;
+}
+.step-num{
+  flex-shrink:0;width:38px;height:38px;border-radius:50%;
+  background:var(--accent);color:#fff;font-weight:900;font-size:16px;
+  display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;
+}
+.step h3{font-size:16px;font-weight:800;color:var(--title);margin-bottom:4px;}
+.step p{font-size:14px;color:var(--text);line-height:1.5;}
+
+/* GARANTIA */
+.garantia-box{
+  background:#F0FDF4;border:2px solid var(--accent);
+  border-radius:20px;padding:30px 22px;text-align:center;
+}
+.garantia-box .g-icon{
+  width:64px;height:64px;border-radius:50%;background:var(--accent);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+}
+.garantia-box .g-icon svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:2;}
+.garantia-box h2{font-size:19px;font-weight:800;color:var(--accent-dark);margin-bottom:10px;}
+.garantia-box p{font-size:14.5px;color:var(--text);line-height:1.65;}
+
+/* FAQ */
+.faq-item{background:var(--white);border:1px solid var(--card-border);border-radius:14px;margin-bottom:12px;overflow:hidden;}
+.faq-q{
+  padding:18px 16px;font-size:15px;font-weight:700;color:var(--title);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq-q::after{content:'+';font-size:20px;color:var(--accent);font-weight:700;flex-shrink:0;transition:transform .2s;}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{display:none;padding:0 16px 18px;font-size:14px;color:var(--text);line-height:1.65;}
+.faq-item.open .faq-a{display:block;}
+
+/* FINAL CTA */
+.final-cta{
+  background:linear-gradient(160deg,#111827,#1F2937);
+  padding:44px 22px;text-align:center;
+}
+.final-cta h2{color:#fff;font-size:23px;font-weight:800;margin-bottom:12px;line-height:1.35;}
+.final-cta p{color:#D1D5DB;font-size:14.5px;line-height:1.65;margin-bottom:24px;}
+
+/* POPUP UPSELL (order bump) */
+.bump-overlay{
+  position:fixed;inset:0;background:rgba(17,24,39,.64);
+  backdrop-filter:blur(2px);
+  display:none;align-items:center;justify-content:center;
+  z-index:9999;padding:20px;
+}
+.bump-overlay.active{display:flex;}
+.bump-modal{
+  background:#fff;border-radius:22px;max-width:380px;width:100%;
+  padding:26px 22px 22px;position:relative;
+  box-shadow:0 24px 60px rgba(17,24,39,.35);
+  animation:bumpIn .25s ease;
+  max-height:90vh;overflow-y:auto;
+}
+@keyframes bumpIn{from{opacity:0;transform:translateY(14px) scale(.97);}to{opacity:1;transform:translateY(0) scale(1);}}
+.bump-close{
+  position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;
+  background:#F3F4F6;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;
+}
+.bump-close svg{width:15px;height:15px;stroke:#6B7280;}
+.bump-badge{
+  display:inline-flex;align-items:center;gap:6px;background:#FEF3C7;color:#92400E;
+  font-size:11.5px;font-weight:800;padding:6px 12px;border-radius:50px;margin-bottom:14px;
+  letter-spacing:.3px;
+}
+.bump-badge svg{stroke:#92400E;flex-shrink:0;}
+.bump-title{
+  font-family:'Poppins',sans-serif;font-size:19px;font-weight:800;
+  color:var(--title);line-height:1.32;margin-bottom:10px;padding-right:20px;
+}
+.bump-title .accent{color:var(--accent);}
+.bump-desc{font-size:13.5px;color:var(--text);line-height:1.6;margin-bottom:16px;}
+.bump-list{list-style:none;margin-bottom:16px;background:#F0FDF4;border-radius:14px;padding:14px 16px;}
+.bump-list li{display:flex;gap:8px;align-items:flex-start;font-size:13px;font-weight:600;color:var(--title);padding:4px 0;}
+.bump-list li svg{flex-shrink:0;margin-top:2px;stroke:var(--accent);}
+.bump-price-row{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:16px;}
+.bump-price-old{font-size:14.5px;color:#9CA3AF;text-decoration:line-through;}
+.bump-price-new{font-family:'Poppins',sans-serif;font-size:30px;font-weight:900;color:var(--gold);}
+.bump-price-new sup{font-size:14px;}
+.bump-save{font-size:11px;font-weight:800;color:var(--accent-dark);background:#DCFCE7;padding:4px 10px;border-radius:50px;}
+.bump-decline{
+  display:block;width:100%;text-align:center;background:none;border:none;
+  font-size:12.5px;color:#9CA3AF;font-weight:600;padding:14px 0 0;cursor:pointer;
+  text-decoration:underline;
+}
+
+/* URGÊNCIA — POPUP 12,99 */
+#bumpOverlay2 .bump-modal{
+  border:2.5px solid #DC2626;
+  background:linear-gradient(180deg,#FEF2F2 0%,#FFFFFF 22%);
+}
+#bumpOverlay2 .bump-badge{
+  background:#DC2626;color:#fff;
+  animation:urgencyPulse 1.3s ease-in-out infinite;
+}
+#bumpOverlay2 .bump-badge svg{stroke:#fff;}
+@keyframes urgencyPulse{
+  0%,100%{box-shadow:0 0 0 rgba(220,38,38,0);}
+  50%{box-shadow:0 0 0 6px rgba(220,38,38,.14);}
+}
+.bump-urgency-timer{
+  display:flex;align-items:center;gap:8px;
+  background:#FEE2E2;border:1px solid #FCA5A5;border-radius:12px;
+  padding:10px 14px;margin-bottom:16px;
+}
+.bump-urgency-timer svg{flex-shrink:0;stroke:#DC2626;}
+.bump-urgency-timer span{font-size:13px;font-weight:700;color:#991B1B;}
+.bump-urgency-timer b{font-family:'Poppins',sans-serif;font-weight:900;color:#DC2626;font-size:14.5px;}
+.bump-scarcity{
+  display:flex;align-items:center;gap:7px;
+  font-size:12px;font-weight:700;color:#B91C1C;margin-bottom:16px;
+}
+.bump-scarcity svg{flex-shrink:0;stroke:#DC2626;}
+#bumpOverlay2 .bump-price-new{color:#DC2626;}
+#bumpOverlay2 .bump-save{background:#FEE2E2;color:#B91C1C;}
+
+footer{background:var(--title);color:#9CA3AF;text-align:center;padding:26px 20px;font-size:12px;line-height:1.8;}
+footer a{color:#D1D5DB;text-decoration:none;}
+</style>
+<script>
+  window.pixelId = "6a1da19cc28d35a43c526590";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"/></svg>OFERTA ESPECIAL <span class="tb-pulse">DIA DOS PAIS</span><span class="tb-timer">— expira em <span id="countdown">10:00:00</span></span></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">DIA DOS PAIS</div>
+  <h1><span class="num">+25 Modelos</span> de Caixinhas Personalizadas de Times para o <span class="h1-highlight">Dia dos Pais</span></h1>
+  <div class="hero-video">
+    <wistia-player media-id="tl40neoi11" aspect="0.5625"></wistia-player>
+  </div>
+  <p>+25 modelos exclusivos em PDF, prontos para imprimir, montar e personalizar com a foto do papai. Crie presentes únicos e emocionantes ou aproveite a oportunidade para aumentar suas vendas nesta data especial.</p>
+  <div class="tag-row">
+    <span class="tag-chip"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Arquivos digitais</span>
+    <span class="tag-chip"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Prontos para imprimir</span>
+    <span class="tag-chip"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>Fácil montagem</span>
+  </div>
+  <a href="#planos" class="btn btn-green">QUERO MEU PACK AGORA</a>
+  <div class="wa-note">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.06-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+    <p><strong>Receba seu Pack automaticamente no WhatsApp</strong> após a confirmação do pagamento.<br>Acesso rápido, seguro e sem espera.</p>
+  </div>
+</section>
+
+<!-- IDEAL PARA -->
+<section class="sec alt">
+  <h2 class="sec-title">Um presente perfeito para <span class="accent">cada tipo de papai</span></h2>
+  <ul class="ideal-list">
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Pais apaixonados por futebol</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Filhos que querem criar algo especial</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Mães que querem surpreender o marido</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Papelarias que querem vender no Dia dos Pais</li>
+  </ul>
+</section>
+
+<!-- CARROSSEL DE MODELOS -->
+<section class="sec">
+  <h2 class="sec-title">Veja alguns <span class="accent">modelos disponíveis</span></h2>
+  <div class="car-wrap">
+    <div class="car-track" id="modelCarousel">
+      <div class="model-card"><img src="img/Corinthians (1).webp" alt="Modelo caixinha Corinthians" loading="lazy"></div>
+      <div class="model-card"><img src="img/flamengo.webp" alt="Modelo caixinha Flamengo" loading="lazy"></div>
+      <div class="model-card"><img src="img/corinthians.webp" alt="Modelo caixinha Corinthians" loading="lazy"></div>
+      <div class="model-card"><img src="img/Flamengo (1).webp" alt="Modelo caixinha Flamengo" loading="lazy"></div>
+    </div>
+  </div>
+  <p class="car-caption">Confira diferentes modelos de caixinhas personalizadas com times de futebol e opções para criar presentes únicos.</p>
+</section>
+
+<!-- PLANOS -->
+<section class="sec alt" id="planos">
+  <h2 class="sec-title">Escolha <span class="accent">seu pacote</span></h2>
+  <div class="pricing-wrap">
+
+    <!-- BASICO -->
+    <div class="price-card basic">
+      <div class="pc-name">Pack Básico</div>
+      <div class="pc-desc">+25 Modelos de Caixinhas Personalizadas — para quem quer apenas os modelos principais.</div>
+      <ul class="pc-list">
+        <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>+25 modelos de times de futebol</li>
+        <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Arquivos em PDF prontos para imprimir</li>
+        <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Moldes preparados para folha A4</li>
+      </ul>
+      <div class="pc-note">Não inclui bônus extras.</div>
+      <div class="price-row">
+        <div class="price-old">De: R$27,00</div>
+        <div class="price-now-label">Hoje:</div>
+        <div class="price-now"><sup>R$</sup>9<span class="cents">,90</span></div>
+      </div>
+      <a href="#" id="basicBtn" class="btn btn-green">QUERO O PACK BÁSICO</a>
+    </div>
+
+    <!-- COMPLETO -->
+    <div class="price-card premium">
+      <div class="badge-vendido"><svg viewBox="0 0 24 24" width="13" height="13"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>MAIS VENDIDO</div>
+      <div class="pc-name">Pack Completo Dia dos Pais</div>
+      <div class="pc-desc">+25 Modelos + 2 Bônus Exclusivos — tudo que você precisa para criar presentes mais personalizados ou aumentar suas encomendas.</div>
+      <ul class="pc-list">
+        <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tudo do Pack Básico</li>
+      </ul>
+      <div class="pc-bonus-block">
+        <div class="pb-title"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"/></svg>BÔNUS 1 — Kit Presente Completo Dia dos Pais</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cartões personalizados</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tags para presente</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Frases emocionantes</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Artes extras para complementar a lembrança</li>
+        </ul>
+      </div>
+      <div class="pc-bonus-block">
+        <div class="pb-title"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"/></svg>BÔNUS 2 — Pack Modelos Extras</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Modelos sem time</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Modelos "Melhor Pai do Mundo"</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Modelos com foto</li>
+          <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Novas opções de personalização</li>
+        </ul>
+      </div>
+      <div class="pc-highlight-note">Por apenas R$10 a mais, leve o pacote completo.</div>
+      <div class="price-row">
+        <div class="price-old">De: R$67,00</div>
+        <div class="price-now-label">Hoje:</div>
+        <div class="price-now"><sup>R$</sup>19<span class="cents">,90</span></div>
+      </div>
+      <div class="pc-pay-note">Pagamento único. Acesso imediato.</div>
+      <div class="wa-note" style="max-width:none;margin-top:0;margin-bottom:16px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:#4ADE80;"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.06-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <p style="color:#C3D3E8;">Após a compra, você recebe o acesso completo diretamente no seu WhatsApp.</p>
+      </div>
+      <a href="#" class="btn btn-green btn-pulse">QUERO O PACK COMPLETO</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRANSFORMACAO -->
+<section class="sec">
+  <div class="transform-box">
+    <h2>Não é apenas uma caixinha. É uma <span class="accent">lembrança personalizada.</span></h2>
+    <p>Uma simples folha A4 pode se transformar em um presente cheio de significado. Escolha o time favorito, adicione uma foto especial e surpreenda o papai com algo feito especialmente para ele.</p>
+  </div>
+</section>
+
+<!-- ENTREGA VIA WHATSAPP -->
+<section class="sec alt">
+  <h2 class="sec-title">Receba seu Pack na hora <span class="accent">pelo WhatsApp</span></h2>
+  <p class="car-caption" style="margin-top:-10px;margin-bottom:24px;">Após a confirmação do pagamento, o acesso aos arquivos é enviado automaticamente para o WhatsApp informado na compra.</p>
+  <div class="wa-box">
+    <div class="wa-top">
+      <div class="wa-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.06-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+      <div>
+        <div class="wa-name">Entrega Automática</div>
+        <div class="wa-status"><span class="dot"></span>online agora</div>
+      </div>
+    </div>
+    <div class="wa-chat">
+      <div class="wa-bubble"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pagamento aprovado!<span class="wa-tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+      <div class="wa-bubble"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Aqui está o link do seu Pack Dia dos Pais<span class="wa-tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+      <div class="wa-bubble"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>É só baixar, imprimir e montar!<span class="wa-tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+    </div>
+  </div>
+  <ul class="ideal-list" style="margin-top:22px;">
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Entrega automática</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Arquivos PDF prontos para baixar</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Sem precisar aguardar atendimento</li>
+    <li><span class="check"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Comece a montar suas caixinhas imediatamente</li>
+  </ul>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec">
+  <h2 class="sec-title">Como <span class="accent">funciona?</span></h2>
+  <p class="car-caption" style="margin-top:-10px;margin-bottom:22px;">Em apenas 3 passos:</p>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div><h3>Faça sua compra</h3><p>Escolha o pacote ideal e finalize seu pedido.</p></div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div><h3>Receba no WhatsApp</h3><p>Assim que o pagamento for confirmado, você recebe automaticamente o link com todos os arquivos.</p></div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div><h3>Imprima e personalize</h3><p>Monte suas caixinhas e crie presentes incríveis.</p></div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="sec alt">
+  <div class="garantia-box">
+    <div class="g-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+    <h2>Compra segura</h2>
+    <p>Você recebe arquivos digitais prontos para usar. Caso o material não atenda suas expectativas, você conta com garantia de 7 dias.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <h2 class="sec-title">Perguntas <span class="accent">frequentes</span></h2>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <div class="faq-q">Como recebo o Pack?</div>
+    <div class="faq-a">O acesso é enviado automaticamente pelo WhatsApp após a confirmação do pagamento. Basta abrir o link recebido e baixar seus arquivos.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <div class="faq-q">O produto é físico?</div>
+    <div class="faq-a">Não. Você recebe arquivos digitais em PDF para imprimir.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <div class="faq-q">Preciso ter máquina de corte?</div>
+    <div class="faq-a">Não. As caixinhas podem ser montadas manualmente.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <div class="faq-q">Posso vender as caixinhas que eu produzir?</div>
+    <div class="faq-a">Sim. Você pode utilizar os arquivos para criar e vender suas próprias peças personalizadas.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <div class="faq-q">Quando recebo?</div>
+    <div class="faq-a">O acesso é liberado imediatamente após a confirmação do pagamento.</div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Transforme o Dia dos Pais em uma lembrança especial</h2>
+  <p>Crie presentes personalizados para quem você ama ou aproveite essa oportunidade para vender mais nesta data.</p>
+  <a href="#planos" class="btn btn-green">QUERO RECEBER MEU PACK COMPLETO</a>
+</section>
+
+<footer>
+  <p>Copyright © 2026. Todos os direitos reservados.</p>
+  <p style="margin-top:8px"><a href="#">Política de Privacidade</a> &nbsp;|&nbsp; <a href="#">Termos de Uso</a> &nbsp;|&nbsp; <a href="#">Contato</a></p>
+  <p style="margin-top:10px;font-size:11px;color:#6B7280">Este produto é digital. Após a confirmação do pagamento, o acesso é liberado imediatamente.</p>
+</footer>
+
+<!-- POPUP UPSELL 1 — R$14,99 -->
+<div class="bump-overlay" id="bumpOverlay1">
+  <div class="bump-modal">
+    <button class="bump-close" onclick="closeBumps()" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="bump-badge">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"/></svg>
+      OFERTA ÚNICA NESTA TELA
+    </div>
+    <div class="bump-title">Espera! Que tal transformar esse presente em algo <span class="accent">inesquecível?</span></div>
+    <p class="bump-desc">Por muito pouco a mais, o papai não recebe só uma caixinha — recebe uma lembrança completa, com cartão, tag e frase emocionante junto. Leve o Pack Completo agora, com preço especial só nesta tela:</p>
+    <ul class="bump-list">
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>+25 modelos de times de futebol</li>
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Kit Presente Completo: cartões, tags e frases emocionantes</li>
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pack Modelos Extras: sem time, "Melhor Pai do Mundo" e com foto</li>
+    </ul>
+    <div class="bump-price-row">
+      <span class="bump-price-old">De R$19,90</span>
+      <span class="bump-price-new"><sup>R$</sup>14,99</span>
+      <span class="bump-save">Economize R$4,91</span>
+    </div>
+    <a href="#" id="bumpAccept1" class="btn btn-green btn-pulse">SIM, QUERO O PACK COMPLETO POR R$14,99</a>
+    <button class="bump-decline" onclick="showBump2()">Não, quero continuar só com o básico</button>
+  </div>
+</div>
+
+<!-- POPUP UPSELL 2 — R$12,99 (última chance) -->
+<div class="bump-overlay" id="bumpOverlay2">
+  <div class="bump-modal">
+    <button class="bump-close" onclick="closeBumps()" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="bump-badge">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
+      ÚLTIMA CHANCE
+    </div>
+    <div class="bump-title">Tudo bem. Essa é a <span class="accent">sua última oportunidade</span></div>
+    <p class="bump-desc">Depois desta tela essa condição não vai aparecer de novo. É agora ou nunca: garanta todos os bônus e deixe o presente do seu papai ainda mais completo por menos de R$13.</p>
+    <div class="bump-scarcity">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      Restam poucas unidades com esse valor hoje
+    </div>
+    <ul class="bump-list">
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>+25 modelos de times de futebol</li>
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Kit Presente Completo: cartões, tags e frases emocionantes</li>
+      <li><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pack Modelos Extras: sem time, "Melhor Pai do Mundo" e com foto</li>
+    </ul>
+    <div class="bump-price-row">
+      <span class="bump-price-old">De R$19,90</span>
+      <span class="bump-price-new"><sup>R$</sup>12,99</span>
+      <span class="bump-save">Economize R$6,91</span>
+    </div>
+    <div class="bump-urgency-timer">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
+      <span>Essa oferta expira em <b id="bumpCountdown">02:00</b></span>
+    </div>
+    <a href="#" id="bumpAccept2" class="btn btn-green btn-pulse" style="background:#DC2626;box-shadow:0 8px 20px rgba(220,38,38,.32);">SIM, GARANTIR POR R$12,99</a>
+    <button class="bump-decline" onclick="goToBasic()">Não, seguir só com o Pack Básico</button>
+  </div>
+</div>
+
+<script>
+// CARROSSEL INFINITO
+function setupCarousel(trackEl, speed){
+  if(!trackEl) return;
+  var origItems = Array.from(trackEl.children);
+  if(origItems.length === 0) return;
+  origItems.forEach(function(item){ trackEl.appendChild(item.cloneNode(true)); });
+  origItems.forEach(function(item){ trackEl.appendChild(item.cloneNode(true)); });
+
+  var pos = 0, paused = false, singleWidth = 0;
+
+  function calcWidth(){
+    var items = trackEl.children, total = 0, gap = 12;
+    for(var i=0;i<origItems.length;i++){ total += items[i].getBoundingClientRect().width + gap; }
+    return total;
+  }
+  function tick(){
+    if(!paused){
+      pos += speed;
+      if(singleWidth > 0 && pos >= singleWidth){ pos -= singleWidth; }
+      trackEl.style.transform = 'translateX(-' + pos + 'px)';
+    }
+    requestAnimationFrame(tick);
+  }
+  var wrap = trackEl.parentElement;
+  if(wrap){
+    wrap.addEventListener('touchstart', function(){ paused = true; }, {passive:true});
+    wrap.addEventListener('touchend', function(){ paused = false; }, {passive:true});
+    wrap.addEventListener('mouseenter', function(){ paused = true; });
+    wrap.addEventListener('mouseleave', function(){ paused = false; });
+  }
+  function tryStart(){
+    singleWidth = calcWidth();
+    if(singleWidth < 50){ setTimeout(tryStart, 200); return; }
+    requestAnimationFrame(tick);
+  }
+  if(document.readyState === 'complete'){ tryStart(); }
+  else { window.addEventListener('load', tryStart); }
+}
+setupCarousel(document.getElementById('modelCarousel'), 0.6);
+
+// CONTADOR REGRESSIVO PERSISTENTE (não reinicia ao atualizar a página)
+(function(){
+  var DURATION = 10 * 60 * 60 * 1000; // 10:00:00
+  var STORAGE_KEY = 'padsOfertaExpiraEm';
+  var endTime;
+  try{
+    var saved = localStorage.getItem(STORAGE_KEY);
+    endTime = saved ? parseInt(saved, 10) : 0;
+    if(!endTime || endTime <= Date.now()){
+      endTime = Date.now() + DURATION;
+      localStorage.setItem(STORAGE_KEY, endTime);
+    }
+  }catch(e){
+    endTime = Date.now() + DURATION;
+  }
+
+  var el = document.getElementById('countdown');
+  function pad(n){ return n.toString().padStart(2,'0'); }
+  function render(){
+    var diff = endTime - Date.now();
+    if(diff <= 0){
+      try{
+        endTime = Date.now() + DURATION;
+        localStorage.setItem(STORAGE_KEY, endTime);
+      }catch(e){ endTime = Date.now() + DURATION; }
+      diff = endTime - Date.now();
+    }
+    var h = Math.floor(diff / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    if(el) el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+  }
+  render();
+  setInterval(render, 1000);
+})();
+
+// POPUP UPSELL (order bump) — disparado ao clicar em "QUERO O PACK BÁSICO"
+(function(){
+  var basicBtn = document.getElementById('basicBtn');
+  var overlay1 = document.getElementById('bumpOverlay1');
+  var overlay2 = document.getElementById('bumpOverlay2');
+  if(!basicBtn || !overlay1 || !overlay2) return;
+
+  var basicHref = basicBtn.getAttribute('href');
+
+  // TODO: troque pelos links reais de checkout de cada oferta
+  document.getElementById('bumpAccept1').setAttribute('href', '#'); // checkout R$14,99
+  document.getElementById('bumpAccept2').setAttribute('href', '#'); // checkout R$12,99
+
+  basicBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    overlay1.classList.add('active');
+  });
+
+  window.showBump2 = function(){
+    overlay1.classList.remove('active');
+    overlay2.classList.add('active');
+    startBumpCountdown();
+  };
+  window.goToBasic = function(){
+    overlay1.classList.remove('active');
+    overlay2.classList.remove('active');
+    window.location.href = basicHref;
+  };
+  window.closeBumps = function(){
+    overlay1.classList.remove('active');
+    overlay2.classList.remove('active');
+  };
+
+  // Timer de urgência do popup 2 (2 minutos, reinicia a cada exibição)
+  var bumpTimerInterval = null;
+  function startBumpCountdown(){
+    var el = document.getElementById('bumpCountdown');
+    if(!el) return;
+    if(bumpTimerInterval) clearInterval(bumpTimerInterval);
+    var seconds = 120;
+    function render(){
+      var m = Math.floor(seconds / 60);
+      var s = seconds % 60;
+      el.textContent = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      if(seconds <= 0){
+        clearInterval(bumpTimerInterval);
+        goToBasic();
+        return;
+      }
+      seconds--;
+    }
+    render();
+    bumpTimerInterval = setInterval(render, 1000);
+  }
+})();
+</script>
+</body>
+</html>
