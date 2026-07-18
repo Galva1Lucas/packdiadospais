@@ -515,7 +515,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
         <div class="price-now-label">Hoje:</div>
         <div class="price-now"><sup>R$</sup>9<span class="cents">,90</span></div>
       </div>
-      <a href="https://pay.wiapy.com/5biH6sI8NN8Q" id="basicBtn" class="btn btn-green" onclick="event.preventDefault(); document.getElementById('bumpOverlay1').classList.add('active'); return false;">QUERO O PACK BÁSICO</a>
+      <a href="javascript:void(0)" id="basicBtn" class="btn btn-green" onclick="document.getElementById('bumpOverlay1').classList.add('active');">QUERO O PACK BÁSICO</a>
     </div>
 
     <!-- COMPLETO -->
@@ -806,7 +806,7 @@ setupCarousel(document.getElementById('modelCarousel'), 0.6);
   var overlay2 = document.getElementById('bumpOverlay2');
   if(!basicBtn || !overlay1 || !overlay2) return;
 
-  var basicHref = basicBtn.getAttribute('href');
+  var basicHref = 'https://pay.wiapy.com/5biH6sI8NN8Q';
 
   basicBtn.addEventListener('click', function(e){
     e.preventDefault();
