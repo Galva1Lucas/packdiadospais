@@ -512,7 +512,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
         <div class="price-now-label">Hoje:</div>
         <div class="price-now"><sup>R$</sup>9<span class="cents">,90</span></div>
       </div>
-      <a href="#" id="basicBtn" class="btn btn-green">QUERO O PACK BÁSICO</a>
+      <a href="https://pay.wiapy.com/5biH6sI8NN8Q" id="basicBtn" class="btn btn-green">QUERO O PACK BÁSICO</a>
     </div>
 
     <!-- COMPLETO -->
@@ -552,7 +552,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:#4ADE80;"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.06-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
         <p style="color:#C3D3E8;">Após a compra, você recebe o acesso completo diretamente no seu WhatsApp.</p>
       </div>
-      <a href="#" class="btn btn-green btn-pulse">QUERO O PACK COMPLETO</a>
+      <a href="https://pay.wiapy.com/vM1cXj2O4aov" class="btn btn-green btn-pulse">QUERO O PACK COMPLETO</a>
     </div>
 
   </div>
@@ -679,7 +679,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
       <span class="bump-price-new"><sup>R$</sup>14,99</span>
       <span class="bump-save">Economize R$4,91</span>
     </div>
-    <a href="#" id="bumpAccept1" class="btn btn-green btn-pulse">SIM, QUERO O PACK COMPLETO POR R$14,99</a>
+    <a href="https://pay.wiapy.com/-WqVFly4VJ-E" id="bumpAccept1" class="btn btn-green btn-pulse">SIM, QUERO O PACK COMPLETO POR R$14,99</a>
     <button class="bump-decline" onclick="showBump2()">Não, quero continuar só com o básico</button>
   </div>
 </div>
@@ -714,7 +714,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
       <span>Essa oferta expira em <b id="bumpCountdown">02:00</b></span>
     </div>
-    <a href="#" id="bumpAccept2" class="btn btn-green btn-pulse" style="background:#DC2626;box-shadow:0 8px 20px rgba(220,38,38,.32);">SIM, GARANTIR POR R$12,99</a>
+    <a href="https://pay.wiapy.com/J1eqQJAj67h8" id="bumpAccept2" class="btn btn-green btn-pulse" style="background:#DC2626;box-shadow:0 8px 20px rgba(220,38,38,.32);">SIM, GARANTIR POR R$12,99</a>
     <button class="bump-decline" onclick="goToBasic()">Não, seguir só com o Pack Básico</button>
   </div>
 </div>
@@ -804,10 +804,6 @@ setupCarousel(document.getElementById('modelCarousel'), 0.6);
   if(!basicBtn || !overlay1 || !overlay2) return;
 
   var basicHref = basicBtn.getAttribute('href');
-
-  // TODO: troque pelos links reais de checkout de cada oferta
-  document.getElementById('bumpAccept1').setAttribute('href', '#'); // checkout R$14,99
-  document.getElementById('bumpAccept2').setAttribute('href', '#'); // checkout R$12,99
 
   basicBtn.addEventListener('click', function(e){
     e.preventDefault();
