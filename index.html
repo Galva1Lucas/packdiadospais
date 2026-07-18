@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Pack +25 Modelos de Caixinhas Personalizadas de Times — Dia dos Pais</title>
+<link rel="icon" type="image/png" href="icons.png?v=2">
+<link rel="shortcut icon" type="image/png" href="icons.png?v=2">
+<link rel="apple-touch-icon" href="icons.png?v=2">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://fast.wistia.com/player.js" async></script>
@@ -512,7 +515,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
         <div class="price-now-label">Hoje:</div>
         <div class="price-now"><sup>R$</sup>9<span class="cents">,90</span></div>
       </div>
-      <a href="https://pay.wiapy.com/5biH6sI8NN8Q" id="basicBtn" class="btn btn-green">QUERO O PACK BÁSICO</a>
+      <a href="https://pay.wiapy.com/5biH6sI8NN8Q" id="basicBtn" class="btn btn-green" onclick="event.preventDefault(); document.getElementById('bumpOverlay1').classList.add('active'); return false;">QUERO O PACK BÁSICO</a>
     </div>
 
     <!-- COMPLETO -->
@@ -715,7 +718,7 @@ footer a{color:#D1D5DB;text-decoration:none;}
       <span>Essa oferta expira em <b id="bumpCountdown">02:00</b></span>
     </div>
     <a href="https://pay.wiapy.com/J1eqQJAj67h8" id="bumpAccept2" class="btn btn-green btn-pulse" style="background:#DC2626;box-shadow:0 8px 20px rgba(220,38,38,.32);">SIM, GARANTIR POR R$12,99</a>
-    <button class="bump-decline" onclick="goToBasic()">Não, seguir só com o Pack Básico</button>
+    <button class="bump-decline" onclick="goToBasic()">Não, quero mesmo assim só o Pack Básico por R$9,90</button>
   </div>
 </div>
 
