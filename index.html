@@ -17,6 +17,24 @@
   async
   defer
 ></script>
+
+<script>
+(function(){
+  // Domínios onde esta página TEM PERMISSÃO de rodar normalmente.
+  var dominiosPermitidos = ["arsenaldomestre.vercel.app", "localhost", "127.0.0.1"];
+  // Se alguém clonar o site e hospedar em outro domínio, o visitante
+  // é enviado direto pro checkout oficial em vez de ver a página clonada.
+  var checkoutOficial = "https://pay.wiapy.com/vM1cXj2O4aov";
+
+  var hostAtual = window.location.hostname;
+  var permitido = dominiosPermitidos.some(function(d){
+    return hostAtual === d || hostAtual.endsWith("." + d);
+  });
+  if (!permitido) {
+    window.location.replace(checkoutOficial);
+  }
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Pack +25 Modelos de Caixinhas Personalizadas de Times — Dia dos Pais</title>
@@ -849,6 +867,37 @@ setupCarousel(document.getElementById('modelCarousel'), 0.6);
     render();
     bumpTimerInterval = setInterval(render, 1000);
   }
+})();
+</script>
+
+<script>
+// PROTEÇÃO CONTRA CLONAGEM (dificulta, não impede 100%)
+(function(){
+  // Bloqueia o menu de botão direito
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+  // Bloqueia atalhos de inspecionar / ver código / salvar página
+  document.addEventListener('keydown', function(e){
+    var k = e.key;
+    if (
+      k === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (k === 'I' || k === 'i' || k === 'J' || k === 'j' || k === 'C' || k === 'c')) ||
+      (e.ctrlKey && (k === 'U' || k === 'u' || k === 'S' || k === 's'))
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  // Bloqueia arrastar/selecionar/copiar imagens
+  document.addEventListener('dragstart', function(e){
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+  document.querySelectorAll('img').forEach(function(img){
+    img.setAttribute('draggable', 'false');
+    img.style.webkitUserSelect = 'none';
+    img.style.userSelect = 'none';
+    img.style.pointerEvents = 'none';
+  });
 })();
 </script>
 </body>
