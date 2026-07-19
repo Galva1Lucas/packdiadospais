@@ -71,6 +71,11 @@ body{
   max-width:480px;
   margin:0 auto;
   overflow-x:hidden;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  -webkit-touch-callout:none;
 }
 h1,h2,h3,.display{font-family:'Poppins',sans-serif;}
 
@@ -879,6 +884,10 @@ setupCarousel(document.getElementById('modelCarousel'), 0.6);
 (function(){
   // Bloqueia o menu de botão direito
   document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+  // Bloqueia seleção de texto e cópia (reforço do CSS user-select:none)
+  document.addEventListener('selectstart', function(e){ e.preventDefault(); });
+  document.addEventListener('copy', function(e){ e.preventDefault(); });
 
   // Bloqueia atalhos de inspecionar / ver código / salvar página
   document.addEventListener('keydown', function(e){
