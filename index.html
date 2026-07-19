@@ -21,12 +21,16 @@
 <script>
 (function(){
   // Domínios onde esta página TEM PERMISSÃO de rodar normalmente.
-  var dominiosPermitidos = ["arsenaldomestre.vercel.app", "localhost", "127.0.0.1"];
+  var dominiosPermitidos = ["packdiadospais.vercel.app", "localhost", "127.0.0.1"];
   // Se alguém clonar o site e hospedar em outro domínio, o visitante
   // é enviado direto pro checkout oficial em vez de ver a página clonada.
   var checkoutOficial = "https://pay.wiapy.com/vM1cXj2O4aov";
 
   var hostAtual = window.location.hostname;
+
+  // Testando localmente (arquivo aberto direto no navegador) -> não bloqueia.
+  if (window.location.protocol === "file:" || hostAtual === "") return;
+
   var permitido = dominiosPermitidos.some(function(d){
     return hostAtual === d || hostAtual.endsWith("." + d);
   });
